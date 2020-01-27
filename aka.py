@@ -1,0 +1,17 @@
+known_dblp_aka = {
+    'Felipe Tobar': 'Felipe A. Tobar', 
+    'Jose Antonio Garcia': 'José García 0002',
+    'Carlos Aravena': 'Carlos M. Aravena',
+    'Cristhian  A. Aguilera': 'Cristhian A. Aguilera-Carrasco',
+    'Alejandro J. Martínez': 'Alejandro Jiménez Martínez',
+    'Gabriel Sepúlveda': 'Gabriel Sepulveda',  
+    'Jorge Pérez': 'Jorge Pérez 0001',
+    'Jorge Baier': 'Jorge A. Baier',
+    'Pablo Estevez': 'Pablo A. Estévez', 
+    'Juan D. Velasquez': 'Juan D. Velásquez',
+    'Karim Pichara Baksai': 'Karim Pichara',
+    'Carlos Hernández Ulloa': 'Carlos Hernández',
+    'Perez-Acle Tomas': 'Tomas Pérez-Acle',
+    'Rodrigo Carrasco-Davis': 'Rodrigo Carrasco',
+    'Julio Godoy': 'Julio Erasmo Godoy',
+}

@@ -2,7 +2,7 @@ from utils import get_author_dict_from_scholar, add_dblp_publications, get_publi
 from data_lists import labels, top_ai_journals, top_ai_conferences
 from data_researchers import associate_researchers, young_researchers, senior_researchers
 
-since=2015
+since=2010
 upto=2020
 
 authors_dict = get_author_dict_from_scholar(labels, country_search='.cl', max_pages=30, verbose=True, check_email=True, check_email_string='.cl')

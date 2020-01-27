@@ -67,7 +67,8 @@ total, total_from_researchers = count_total_by_venue(
 
 ## Chilean publications in top AI confereces
 
-To see statistics for Chilean researchers publishing at top AI conferences and comparing with a subset of researchers (including in a specific research proposal) just run
+The following script presents some numbers for Chilean researchers publishing at top AI conferences. 
+It considers the conferences NeurIPS, ICLR, ICML, AAAI, and IJCAI, which are the top-5 AI conferences according to [Google Scholar metrics](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence), and a set of researchers included in an upcoming research proposal:
 
 ```
 python script.py

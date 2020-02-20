@@ -2,10 +2,10 @@ from utils import get_author_dict_from_scholar, add_dblp_publications, get_publi
 from data_lists import labels, top_ai_journals, top_ai_conferences
 from data_researchers import associate_researchers, young_researchers, senior_researchers
 
-since=2010
+since=2015
 upto=2020
 
-authors_dict = get_author_dict_from_scholar(labels, country_search='.cl', max_pages=30, verbose=True, check_email=True, check_email_string='.cl')
+authors_dict = get_author_dict_from_scholar(labels, country_search='.cl', max_pages=200, verbose=True, check_email=True, check_email_string='.cl')
 add_dblp_publications(authors_dict, since=since, upto=upto)
 pubs_by_venue = get_publications_by_venue(authors_dict)
 
@@ -25,3 +25,10 @@ print(f'Top AI conference publications ({since}-{upto}) by chileans {total_conf}
 print(f'Top AI conference publications ({since}-{upto}) by researchers in proposal (Assoc.+Young) {total_proposal_conf}')
 print(f'Percentage: {total_proposal_conf/total_conf*100:2.0f}%')
 print()
+
+print('Total list of publications:')
+pub_list_ai = pub_list_conf_year(pubs_by_venue_year, top_ai_conferences)
+for pub in pub_list_ai:
+    print(pub[1], pub[0], pub[2], ', '.join(pub[3]))
+
+

@@ -173,10 +173,12 @@ def add_dblp_publications(authors_dict, verbose=True, since=2015, upto=2020):
             # ipdb.set_trace()
             r = requests.get(url, allow_redirects=True)
             soup = BeautifulSoup(r.content, 'lxml')
-            pub_ul = soup.find('ul', {'class': 'publ-list'})
+            pub_ul = soup.find_all('ul', {'class': 'publ-list'})
             if not pub_ul:
                 continue
-            pub_list = pub_ul.find_all('li', recursive=False)
+            pub_list = []
+            for ul in pub_ul:
+                pub_list += ul.find_all('li', recursive=False)
             current_year = upto
             for li in pub_list:
                 if li['class'] == ['year']:
@@ -222,11 +224,12 @@ def get_publications_by_venue(authors_dict):
         for pub_data in authors_dict[name]['dblp_publications']:
             venue = pub_data['venue']
             title = pub_data['title']
+            title_yer = (pub_data['title'], pub_data['year'])
             if venue not in pubs_by_venue:
                 pubs_by_venue[venue] = {}
             pubs_by_venue[venue][title] = pub_data['author_names']
+            pubs_by_venue[venue][title_year] = pub_data['author_names']
     return pubs_by_venue
-
 
 def count_pubs_with_author(pubs_dict, author_list, verbose=False):
     if not author_list:
@@ -285,5 +288,3 @@ def count_total_by_venue(pubs_by_venue, venue_list, author_list=None, verbose=Tr
             if not data and verbose:
                 print(f'not data for {venue} (not even prefixes)')
     return total, total_authors
-
-

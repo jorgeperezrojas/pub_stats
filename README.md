@@ -73,3 +73,5 @@ It considers the conferences NeurIPS, ICLR, ICML, AAAI, and IJCAI, which are the
 ```
 python script.py
 ```
+
+You can found some more details about this numbers and methods [here](https://github.com/jorgeperezrojas/pub_stats/blob/master/cl_ai_numbers.md)

@@ -40,7 +40,7 @@ To search for publications for everyone of the authors found above, we consider 
 ## Results
 
 We found a total of 24 publications with at least one Chilean author for the above listed conferences. From them, 22 are co-authored by at least one researcher in our proposal. 
-This gives a total of 91.7% of all AI top-conference publications by Chileans attributed to researchers in our proposal.
+This gives a total of **91.7% of all AI top-conference publications by Chileans attributed to researchers in our proposal**.
 The total list of publications, sorted by date of publication, is shown below.
 
 * AAAI 2020 Solving Sum-of-Costs Multi-Agent Pathfinding with Answer-Set Programming. Rodrigo Gómez, **Jorge Baier**, Carlos Hernandez

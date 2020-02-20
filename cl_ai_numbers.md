@@ -76,4 +76,4 @@ A summary of the results can be obtained by runing
 ```
 python script.py
 ```
-
+General info about the code, and how to use it for your own pourposes, can be found [here](https://github.com/jorgeperezrojas/pub_stats).

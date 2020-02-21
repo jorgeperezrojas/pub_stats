@@ -224,12 +224,33 @@ def get_publications_by_venue(authors_dict):
         for pub_data in authors_dict[name]['dblp_publications']:
             venue = pub_data['venue']
             title = pub_data['title']
-            title_yer = (pub_data['title'], pub_data['year'])
             if venue not in pubs_by_venue:
                 pubs_by_venue[venue] = {}
             pubs_by_venue[venue][title] = pub_data['author_names']
-            pubs_by_venue[venue][title_year] = pub_data['author_names']
     return pubs_by_venue
+
+def get_publications_years_by_venue(authors_dict):
+    pubs_by_venue_year = {}
+    for name in authors_dict:
+        for pub_data in authors_dict[name]['dblp_publications']:
+            venue = pub_data['venue']
+            title = pub_data['title']
+            year = pub_data['year']
+            authors = pub_data['author_names']
+            if venue not in pubs_by_venue_year:
+                pubs_by_venue_year[venue] = {}
+            pubs_by_venue_year[venue][title] = (year, authors)
+    return pubs_by_venue_year
+
+def pub_list_conf_year(pubs_by_venue_year, conf_list):
+    output = []
+    for conf in conf_list:
+        if conf in pubs_by_venue_year:
+            for title in pubs_by_venue_year[conf]:
+                (year, authors) = pubs_by_venue_year[conf][title]
+                output.append((year, conf, title, authors))
+    output = sorted(output, reverse=True)
+    return output
 
 def count_pubs_with_author(pubs_dict, author_list, verbose=False):
     if not author_list:

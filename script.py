@@ -1,4 +1,4 @@
-from utils import get_author_dict_from_scholar, add_dblp_publications, get_publications_by_venue, count_total_by_venue
+from utils import get_author_dict_from_scholar, add_dblp_publications, get_publications_by_venue, count_total_by_venue, pub_list_conf_year
 from data_lists import labels, top_ai_journals, top_ai_conferences
 from data_researchers import associate_researchers, young_researchers, senior_researchers
 

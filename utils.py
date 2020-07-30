@@ -2,7 +2,6 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import sys
-import ipdb
 import unidecode
 from aka import known_dblp_aka
 

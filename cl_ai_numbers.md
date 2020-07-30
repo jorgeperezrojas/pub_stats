@@ -73,8 +73,8 @@ The total list of publications, sorted by date of publication, is shown below.
 
 ## Code
 
-The search for authors in Google Scholar is done using the [`get_author_dict_from_scholar`](blob/master/script.py#L8) script.
-The search for publications for every author was done using the [`add_dblp_publications`](blob/master/script.py#L9) script. 
+The search for authors in Google Scholar is done using the [`get_author_dict_from_scholar`](script.py#L8) script.
+The search for publications for every author was done using the [`add_dblp_publications`](script.py#L9) script. 
 A summary of the results can be obtained by runing 
 ```
 python script.py

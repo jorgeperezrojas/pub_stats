@@ -1,5 +1,7 @@
 # Chilean Top AI Conference Publications
 
+**UPDATE July 30, 2020**: numbers, scores, and papers updated with the new release of Scholar Metrics.
+
 We report the total publication count from 2015 to 2020 of Chilean authors in top AI conferences, and compare this number with the total number of publications on that conferences by researchers in our "AI & Society" institute proposal. 
 The researchers in the proposal are:
 
@@ -7,10 +9,8 @@ The researchers in the proposal are:
 * Young Researchers (to be completed): Jocelyn Dunstan, Felipe Bravo, Julio Godoy 
 
 
-Our results show that as of February 2020, **91.7% of all AI top-conference publications by Chileans have a co-author that is part of our proposal**.
+Our results show that as of February 2020, **92% of all AI top-conference publications by Chileans have a co-author that is part of our proposal**.
 Below we show our methods, a summary of our results and the code to replicate this numbers.
-
-
 
 
 ## Methods
@@ -19,11 +19,11 @@ We consider the following international conferences that are listed by Google Sc
 
 |rank|conference|name|h5-index|h5-median|
 |:--:|:---------|:---|:------:|:-------:|
-|1|NeurIPS|Neural Information Processing Systems (ex NIPS)|169|334|
-|2|ICLR| International Conference on Learning Representations    |150 |276|
-|3|ICML| International Conference on Machine Learning|135 |254|
-|4|AAAI| AAAI Conference on Artificial Intelligence  |95  |153|
-|5|IJCAI|International Joint Conference on Artificial Intelligence| 67 |100|
+|1|ICLR| International Conference on Learning Representations|203|359|
+|2|NeurIPS|Neural Information Processing Systems (ex NIPS)|198 |377|
+|3|ICML| International Conference on Machine Learning|171 |309|
+|4|AAAI| AAAI Conference on Artificial Intelligence  |126 |183|
+|5|IJCAI|International Joint Conference on Artificial Intelligence| 95 |140|
 
 To construct the data for Chilean authors in AI we consider all authors listed at [Google Scholar](https://scholar.google.com/citations?view_op=search_authors) that have a verified email ending with `.cl` (which means  authors are currently affiliated with a Chilean institution) and that declare any of the following keywords as research topics.
 
@@ -39,10 +39,13 @@ To search for publications for everyone of the authors found above, we consider 
 
 ## Results
 
-As of February 2020, we found a total of 24 publications with at least one Chilean author for the above listed conferences in the period 2015-2020. From them, 22 are co-authored by at least one researcher in our proposal. 
-This gives a total of **91.7% of all AI top-conference publications by Chileans attributed to researchers in our proposal**.
+As of July 2020, we found a total of 26 publications with at least one Chilean author for the above listed conferences in the period 2015-2020. From them, 24 are co-authored by at least one researcher in our proposal. 
+This gives a total of **92% of all AI top-conference publications by Chileans attributed to researchers in our proposal**.
 The total list of publications, sorted by date of publication, is shown below.
 
+
+* ICLR 2020 The Logical Expressiveness of Graph Neural Networks. Pablo Barceló, Egor V. Kostylev, Mikaël Monet, **Jorge Pérez**, Juan L. Reutter, Juan Pablo Silva
+* IJCAI 2020 WEFE: The Word Embeddings Fairness Evaluation Framework. Pablo Badilla, **Felipe Bravo-Marquez**, **Jorge Pérez**
 * AAAI 2020 Solving Sum-of-Costs Multi-Agent Pathfinding with Answer-Set Programming. Rodrigo Gómez, **Jorge Baier**, Carlos Hernandez
 * NeurIPS 2019 Band-Limited Gaussian Processes: The Sinc Kernel. **Felipe Tobar**
 * ICLR 2019 On the Turing Completeness of Modern Neural Network Architectures. **Jorge Pérez**, Javier Marinkovic, Pablo Barceló

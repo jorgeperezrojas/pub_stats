@@ -1,4 +1,4 @@
-from utils import get_author_dict_from_scholar, add_dblp_publications, get_publications_by_venue, count_total_by_venue, pub_list_conf_year
+from utils import get_author_dict_from_scholar, add_dblp_publications, get_publications_by_venue, count_total_by_venue, pub_list_conf_year, get_publications_years_by_venue
 from data_lists import labels, top_ai_journals, top_ai_conferences
 from data_researchers import associate_researchers, young_researchers, senior_researchers
 
@@ -27,6 +27,7 @@ print(f'Percentage: {total_proposal_conf/total_conf*100:2.0f}%')
 print()
 
 print('Total list of publications:')
+pubs_by_venue_year = get_publications_years_by_venue(authors_dict)
 pub_list_ai = pub_list_conf_year(pubs_by_venue_year, top_ai_conferences)
 for pub in pub_list_ai:
     print(pub[1], pub[0], pub[2], ', '.join(pub[3]))

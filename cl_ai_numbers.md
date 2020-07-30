@@ -9,7 +9,7 @@ The researchers in the proposal are:
 * Young Researchers (to be completed): Jocelyn Dunstan, Felipe Bravo, Julio Godoy 
 
 
-Our results show that as of February 2020, **92% of all AI top-conference publications by Chileans have a co-author that is part of our proposal**.
+Our results show that as of July 2020, **92% of all AI top-conference publications by Chileans have a co-author that is part of our proposal**.
 Below we show our methods, a summary of our results and the code to replicate this numbers.
 
 
